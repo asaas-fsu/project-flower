@@ -1,10 +1,7 @@
 html * {
   font-family: Times New Roman;
   box-sizing: border-box;
-}
-
-body {
-	background-color: #ffecbc; /* should be in html */
+  background-color: #ffecbc;
 }
 
 /* Header Content */
