@@ -1,0 +1,33 @@
+/* Main Section Content */
+.mainsection {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.mainsection img {
+  padding-bottom:10px;
+  width: 200px;
+}
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
