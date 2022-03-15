@@ -22,10 +22,15 @@ app.get('/', (req, res) => {
 
 app.get('/students', async (req, res) => {
     connection.query("SELECT * FROM user", function(err, rows) {
-       if (err) throw err
+       if (err) throw err;
        res.send(rows); 
     });
          
+})
+
+app.get('/home', (req, res) => {
+    app.use(express.static('public'))
+    res.sendFile('index.html', {root: './public/html pages'});
 })
 
 app.post('/login', function(req, res, next) {
