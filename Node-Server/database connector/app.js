@@ -20,6 +20,14 @@ app.get('/', (req, res) => {
     res.sendFile('instructorLogin.html', {root: './public/html pages'});
 })
 
+app.get('/students', async (req, res) => {
+    connection.query("SELECT * FROM user", function(err, rows) {
+       if (err) throw err;
+       res.send(rows); 
+    });
+         
+})
+
 app.get('/home', (req, res) => {
     app.use(express.static('public'))
     res.sendFile('index.html', {root: './public/html pages'});
