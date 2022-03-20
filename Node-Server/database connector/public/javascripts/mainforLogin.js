@@ -32,14 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 
-    loginForm.addEventListener("submit", e => {
-        e.preventDefault();
-        
-        // Perform a log in check here. Probably just check a file with usernames/passwords.
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
-    });
-
     document.querySelectorAll(".form__input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
             // If no longer focusing on the username field and the paramaters are not met (greater than 0 but less than 2) display the error.
