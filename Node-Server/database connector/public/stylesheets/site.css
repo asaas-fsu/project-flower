@@ -280,7 +280,7 @@ a.buttonInstructor {
   width: 80%;
 }
 
-.gad {
+.gad-upper {
   background-color: white;
   border-radius: 5px;
   border: solid 2px;
@@ -289,17 +289,19 @@ a.buttonInstructor {
   margin-top: 2%;
 }
 
-.gad label {
+.gad-upper label {
   font-size: 80%;
+  background-color: white;
 }
 
-.gad form {
+.gad-upper form {
   color: #0574a6;
   padding-top: 2%;
   font-size: 200%;
+  background-color: white;
 }
 
-.gad form select {
+.gad-upper form select {
   font-size: 75%;
   color: #0574a6;
   background-color: white;
@@ -315,7 +317,7 @@ a.buttonInstructor {
   color: #0574a6;
 }
 
-.gad2 {
+.gad-lower {
   background-color: white;
   border-radius: 5px;
   border: solid 2px;
@@ -324,11 +326,13 @@ a.buttonInstructor {
   margin-top: 2%;
 }
 
-.gad2 h1 {
+.gad-lower h1 {
   font-size: 25px;
+  background-color: white;
 }
 
-.gad2 h2 {
+.gad-lower h2 {
+  background-color: white;
   font-size: 25px;
   font-weight: bold;
   margin-top: 3%;
@@ -386,7 +390,7 @@ a.buttonInstructor {
 }
 
 
-/* Create Student Groups Styling */
+/* Create Student Groupss Styling */
 .create-group {
   background-color: white;
   border-radius: 5px;
