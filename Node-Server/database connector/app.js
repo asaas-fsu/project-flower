@@ -45,15 +45,6 @@ app.get('/create-groups', (req, res) => {
     res.sendFile('create-groups-instructor.html', {root: './public/html pages'});
 })
 
-// app.get('/html%20pages/groups.html', (req, res) => {
-//     // app.use(express.static('public'))
-//     // res.sendFile('groups.html', {root: './public/html pages'})
-//     database.query("SELECT username FROM user ORDER BY RAND() LIMIT 2", function(err, rows) {
-//         if (err) throw err
-//         res.send(rows);
-//     })
-// })
-
 app.post('/createAccount', function(req, res, next) {
     var user = req.body.username;
     var pass = req.body.password;
