@@ -47,6 +47,11 @@ app.post('/login', function(req, res, next) {
     });
   });
 
+app.get('/lms/poll', function(req, res) {
+    app.use(express.static('public'))
+    res.sendFile('polls-instructor.html', {root: './public/html pages'});
+})
+
 app.listen(port, () => {
     console.log(`app listning on port ${port}`)
 })
