@@ -14,7 +14,7 @@
 
 	<header class="mainheader">
 		<div class ="dropdown">
-			<button class="dropbutton">[[Name]]<br>Profile</button>
+			<button class="dropbutton" id="userButton">[[Name]]<br>Profile</button>
 			<div class="dropdown-content">
 				<a href="change-password-instructor.html">Change Password</a>
 				<a href="#">Logout</a>
@@ -31,25 +31,26 @@
 	<section class="mainsection">
 		<div class="row">
 			<div class="column">
-				<a href="#">
+				<a href="/lms/poll">
 					<img alt="create-poll" src="../images/blue-edit.png">
 					<p>Create Poll / Template</p>
 				</a>
 			</div>
 			<div class="column">
-				<a href="#">
+				<a href="/lms/groups">
 					<img alt="create-groups" src="../images/blue-user-outline.png">
 					<p>Create Student Groups</p>
 				</a>
 			</div>
 			<div class="column">
-				<a href="#">
+				<a href="/lms/content">
 					<img alt="add-material" src="../images/video-play.png">
 					<p>Add Education Material</p>
 				</a>
 			</div>
 		</div>
 	</section>
+    <script src="../javascripts/cookie.js"></script>
 </body>
 
 </html>
