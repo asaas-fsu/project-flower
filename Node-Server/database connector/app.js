@@ -137,10 +137,10 @@ app.get('/lms/discussion', (req, res) => {
         res.sendFile('instructorLogin.html', {root: './public/html pages'});
     }
     else if (cookies.instructor === "false") {
-        res.sendFile();
+        res.sendFile('discussion-student.html', {root: './public/html pages'});
     }
     else if (cookies.instructor === "true") {
-        res.sendFile();
+        res.sendFile('discussion-teacher.html', {root: './public/html pages'});
     }
     else {
         res.send(`<script>alert("Error: User logged in but not designated instructor or student."); window.location.href = "/"; </script>`);
