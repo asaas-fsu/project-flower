@@ -43,8 +43,9 @@ app.get('/students', async (req, res) => {
 app.post('/login', function(req, res, next) {
     var user = req.body.log_username;
     var pass = req.body.log_pass;
-      
-    connection.query(`SELECT * FROM user WHERE username = "${user}"`, function (err, result, fields) {
+    
+    var sql = `SELECT * FROM user WHERE username = ?`
+    connection.query(sql, [user], function (err, result, fields) {
         if (err) throw err;
         if(result[0] !== undefined){
             if(result[0].password === pass) {
