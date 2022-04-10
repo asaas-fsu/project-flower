@@ -14,25 +14,62 @@
 <body>
 
 	<header class="mainheader">
-		<div class ="dropdown">
-			<button class="dropbutton">[[Name]]<br>Profile</button>
-			<div class="dropdown-content">
-				<a href="change-password-student.html">Change Password</a>
-				<a href="#">Logout</a>
-			</div>
-		</div>
-        <a href="mainsite-student.html">
-	    	<img src="../images/flower.jpg" alt="Flower">
-	    	<h1>F.L.O.W.E.R.</h1>
-		    <h2>Financial Literacy Operation With Educational Resources</h2>
-		    <hr>
-        </a>
-	</header>
+        <div class="headerdiv">
+            <div class ="dropdown" style="float: right;">
+                <button class="dropbutton" id="userButton">[[Name]]<br>Profile</button>
+                <div class="dropdown-content">
+                    <a href="/link1">Link</a>
+                    <a href="/link2">Link</a>
+                </div>
+            </div>
+            <div onclick="location.href='/';" style="width: 100%; height:100%">
+                <img class="flowerImage" src="../images/flower.jpg" alt="Flower">
+                <h1>F.L.O.W.E.R.</h1>
+                <h2>Financial Literacy Operation With Educational Resources</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="dropdownBar">
+            <div class="dropdown" style="width: calc(50% - 4px);">
+                <button class="dropbutton">Learning Management System</button>
+                <div class="dropdown-content">
+                    <a href="/lms/poll">Fill-Out-Poll</a>
+                    <a href="/lms/content">View Content</a>
+                    <a href="/lms/discussion">Discussions</a>
+                </div>
+            </div>
+            <div class="dropdown" style="width: calc(50% - 4px);">
+                <button class="dropbutton">Game Assignment Database</button>
+                <div class="dropdown-content">
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidenavDropdown">
+                <button class="dropbutton">Learning Management System</button>
+                <div class="dropdown-content">
+                    <a href="/lms/poll">Fill-Out-Poll</a>
+                    <a href="/lms/content">View Content</a>
+                    <a href="/lms/discussion">Discussions</a>
+                </div>
+            </div>
+            <div class="sidenavDropdown">
+                <button class="dropbutton">Game Assignment Database</button>
+                <div class="dropdown-content">
+                </div>
+            </div>
+        </div>
+		
+        <!-- Use any element to open the sidenav -->
+        <img class="sidenavButton" src="../images/iconmonstr-menu-1.svg" onclick="openNav()"></img>
+        <hr class="dropdownHr">
+    </header>
 
 	<section class="mainsection">
 		<div class="row">
 			<div class="column">
-				<a href="lms-student.html">
+				<a href="/lms">
 					<img alt="LMS" src="../images/blue-school.png">
 					<p>Learning Management System</p>
 				</a>
@@ -45,6 +82,7 @@
 			</div>
 		</div>
 	</section>
+    <script src="../javascripts/cookie.js"></script>
 </body>
 
 </html>
