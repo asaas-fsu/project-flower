@@ -432,10 +432,42 @@ a.buttonInstructor {
 
 .create-group form .button {
   color: #0574a6;
-  font-size: 80%;
+  font-size: 100%;
   border-radius: 3px;
   border-color: #0574a6;
   background-color: white;
+}
+
+.create-group form #number-of-groups {
+  color: #0574a6;
+  font-size: 60%;
+  border-radius: 3px;
+  border-color: #0574a6;
+  background-color: white;
+}
+
+.create-group form #number-of-groups option {
+  background-color: white;
+  font-size: 100%;
+}
+
+.create-group form .btn {
+  color: #0574a6;
+  font-size: 100%;
+  border-radius: 3px;
+  border-color: #0574a6;
+  background-color: white;
+  margin-left: 3%;
+}
+
+.content .section-stack-list .hide {
+  visibility: hidden;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 2px;
+  border-color: #0574a6;
+  padding: 3% 5%;
+  margin-top: 2%;
 }
 
 
