@@ -7,6 +7,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../stylesheets/reset.css" type="text/css" />
 	<link rel="stylesheet" href="../stylesheets/site.css" type="text/css" />
+    <link rel="shortcut icon" href="#">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="../javascripts/sidebar.js"></script>
 
@@ -76,52 +77,15 @@
     
 	<div class="main-content">
 		<div class="content">
-			<article class="create-group">
-				<!-- <form target="_blank" action="../html pages/groups.html">
+			<section class="create-group">
+				<form id="groupForm">
 					<label class="words" for="number">Please select the number of desired groups: </label>
-					<input class="num-input" type="number" id="groupNumber" name="number" min="1"><br>
-					<input class="button" type="submit" value="Create Groups">
-				</form> -->
-                <form id="form" action="#">
-                    <label for="number-of-groups">Please select the number of desired groups: </label>
-                    <select id="number-of-groups">
-                        <option value="">Number of Groups</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <button class="btn" onclick="createGroups()">Create Groups</button>
-                </form>
-			</article>
-            <!-- <div class="hide">Group 1</div>
-            <div class="hide">Group 2</div>
-            <div class="hide">Group 3</div>
-            <div class="hide">Group 4</div> -->
-            <ul id="group-container" class="section-stack-list">
-                <li class="hide">Group 1</li>
-                <li class="hide">Group 2</li>
-                <li class="hide">Group 3</li>
-                <li class="hide">Group 4</li>
-                <li class="hide">Group 5</li>
-                <li class="hide">Group 6</li>
-                <li class="hide">Group 7</li>
-                <li class="hide">Group 8</li>
-                <li class="hide">Group 9</li>
-                <li class="hide">Group 10</li>
-            </ul>
+					<input class="num-input" type="number" name="input" min="1"><br>
+					<input class="button" type="button" onclick="getData()" value="Create Groups">
+				</form>
+			</section>
 		</div>
 	</div>
-    
-	<section class="mainsection" id="content">
-		<button onclick="createGroups()"> Create Poll</button>
-	</section>
 
     <script src="../javascripts/create-groups-instructor.js"></script>
 </body>
