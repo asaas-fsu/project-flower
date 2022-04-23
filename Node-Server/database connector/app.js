@@ -35,6 +35,13 @@ app.get('/students', async (req, res) => {
          
 })
 
+app.get('/groups', async (req, res) => {
+    database.query("SELECT * FROM group_info", function(err, rows) {
+        if (err) throw err
+        res.send(rows);
+    })
+})
+
 app.post('/login', function(req, res, next) {
     var user = req.body.log_username;
     var pass = req.body.log_pass;
