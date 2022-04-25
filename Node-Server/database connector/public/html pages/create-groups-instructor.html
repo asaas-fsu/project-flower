@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<title>LMS - Instructor</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../stylesheets/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../stylesheets/index.css" type="text/css" />
+	<link rel="stylesheet" href="../stylesheets/lms.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<header class="mainheader">
+        <div class="headerdiv">
+            <div class ="dropdown" style="float: right;">
+                <button class="dropbutton" id="userButton">[[Name]]<br>Profile</button>
+                <div class="dropdown-content">
+                    <a href="/link1">Link</a>
+                    <a onclick="logout()">Logout</a>
+                </div>
+            </div>
+            <div onclick="location.href='/';" style="width: 100%; height:100%">
+                <img class="flowerImage" src="../images/flower.jpg" alt="Flower">
+                <h1>F.L.O.W.E.R.</h1>
+                <h2>Financial Literacy Operation With Educational Resources</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="dropdownBar">
+            <div class="dropdown" style="width: calc(50% - 4px);">
+                <button class="dropbutton">Learning Management System</button>
+                <div class="dropdown-content">
+                    <a href="/lms/poll">Create Poll</a>
+                    <a href="/lms/groups">Create Student Group</a>
+                    <a href="/lms/content">Add Educational Material</a>
+                </div>
+            </div>
+            <div class="dropdown" style="width: calc(50% - 4px);">
+                <button class="dropbutton">Game Assignment Database</button>
+                <div class="dropdown-content">
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidenavDropdown">
+                <button class="dropbutton">Learning Management System</button>
+                <div class="dropdown-content">
+                    <a href="/lms/poll">Create Poll</a>
+                    <a href="/lms/groups">Create Student Group</a>
+                    <a href="/lms/content">Add Educational Material</a>
+                </div>
+            </div>
+            <div class="sidenavDropdown">
+                <button class="dropbutton">Game Assignment Database</button>
+                <div class="dropdown-content">
+                </div>
+            </div>
+        </div>
+		
+        <!-- Use any element to open the sidenav -->
+        <img class="sidenavButton" src="../images/iconmonstr-menu-1.svg" onclick="openNav()"></img>
+        <hr class="dropdownHr">
+    </header>
+
+	<section class="mainsection">
+		<h1>This is a temporary page.</h1>
+	</section>
+    <script src="../javascripts/cookie.js"></script>
+</body>
+
+</html>
