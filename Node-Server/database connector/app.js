@@ -7,7 +7,7 @@ var mysql = require ('mysql');
 var bodyParser = require('body-parser');
 const { redirect } = require('express/lib/response');
 var database = require('./student_space_db');
-var queries = require('./queries.js')
+var queries = require('./queries.js');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(fileUpload())
