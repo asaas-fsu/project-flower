@@ -13,7 +13,7 @@ function getData() {
         arrayDiv[i].id = 'block' + i;
         arrayDiv[i].style.backgroundColor = 'white';
         arrayDiv[i].className = 'block' + i;
-        arrayDiv[i].textContent = i + 1;
+        arrayDiv[i].textContent = "Group";
         document.body.appendChild(arrayDiv[i]);
     }
 }
