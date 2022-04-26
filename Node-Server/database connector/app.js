@@ -225,14 +225,6 @@ app.get('/lms/groups', (req, res) => {
     }
 })
 
-app.post('/createGroup', function(req, res) {
-    var sql = `INSERT INTO group_info`;
-    connection.query(sql, function(err, result) {
-        if (err) throw err;
-        res.send(result);
-    })
-})
-
 app.get('/getGroup', async (req, res) => {
     connection.query("SELECT * FROM group_info", function(err, rows) {
        if (err) throw err;
