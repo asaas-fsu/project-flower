@@ -246,6 +246,7 @@ a.buttonInstructor {
   border-color: #0574a6;
   padding: 3% 5%;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .create-group label {
@@ -318,12 +319,13 @@ a.buttonInstructor {
   margin-top: 2%;
 }
 
+
 .group-list button {
   background-color: white;
   font-size: 25px;
   border-radius: 5px;
   border-color: #0574a6;
   display: block;
-  margin-top: 2%;
+  margin-bottom: 2%;
   color: #0574a6;
 }

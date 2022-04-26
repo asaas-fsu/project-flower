@@ -240,13 +240,6 @@ app.get('/getGroup', async (req, res) => {
     });
 })
 
-app.get('/getGroupMember', function(req, res) {
-    connect.query("SELECT * FROM group_member", function(err, rows) {
-        if (err) throw err;
-        res.send(rows);
-    })
-})
-
 app.listen(port, () => {
     console.log(`app listning on port ${port}`)
 })

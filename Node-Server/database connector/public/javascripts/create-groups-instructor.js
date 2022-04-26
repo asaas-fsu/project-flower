@@ -60,7 +60,7 @@ function viewGroup(id) {
 // This retrieves the number from the input field and creates sections.
 function getData() {
     var data = [];
-    // var arrayDiv = [];
+    var arrayDiv = [];
     var numGroups = 0;
     
     data[0] = document.getElementsByName('input')[0].value;
@@ -68,14 +68,14 @@ function getData() {
     numGroups = data[0];
     console.log(data[0]);
 
-    // for (var i = 0; i < numGroups; i++) {
-    //     arrayDiv[i] = document.createElement('div');
-    //     arrayDiv[i].id = 'block' + i;
-    //     arrayDiv[i].style.backgroundColor = 'white';
-    //     arrayDiv[i].className = 'block' + i;
-    //     arrayDiv[i].textContent = "Group";
-    //     groupList.appendChild(arrayDiv[i]);
-    // }
+    for (var i = 0; i < numGroups; i++) {
+        arrayDiv[i] = document.createElement('div');
+        arrayDiv[i].id = 'block' + i;
+        arrayDiv[i].style.backgroundColor = 'white';
+        arrayDiv[i].className = 'block' + i;
+        arrayDiv[i].textContent = "Creating group...";
+        groupList.appendChild(arrayDiv[i]);
+    }
 }
   
 //   var x = getData(); // When this is executed there will be no values in the input.
