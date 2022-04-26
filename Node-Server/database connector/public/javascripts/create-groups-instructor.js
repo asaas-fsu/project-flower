@@ -57,8 +57,32 @@ function viewGroup(id) {
     }
 }
 
+// function createGroup() {
+//     try {
+//         if (document.getElementById("input").value === "") {
+//             throw "Please enter a number!";
+//         }
+//         fetch("/createGroup", {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify(data)
+//         })
+//         .then(function(response) {
+//             console.log('got data');
+//         })
+//         .catch(function(error) {
+//             console.log(error);
+//             throw "Error";
+//         });
 
-
+//         setupPage();
+//     }
+//     catch(exception) {
+//         alert(exception);
+//     }
+// }
 // This retrieves the number from the input field and creates sections.
 function getData() {
     var data = [];
