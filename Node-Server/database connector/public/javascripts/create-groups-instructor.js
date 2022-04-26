@@ -45,7 +45,7 @@ function viewGroup(id) {
             backButton.textContent = "Back";
             backButton.setAttribute("onClick", "javascript: setupPage();");
             groupList.appendChild(backButton);
-        })s
+        })
         .catch(function(error) {
             console.log(error);
             alert(error);
