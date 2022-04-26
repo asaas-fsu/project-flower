@@ -117,28 +117,6 @@ app.get('/lms/poll', (req, res) => {
 
 app.use(express.json());
 
-app.post('/createGroup', function(req, res) {
-    var sql = `INSERT INTO group_info`;
-    connection.query(sql, function(err, result) {
-        if (err) throw err;
-        res.send(result);
-    })
-})
-
-app.get('/getGroup', async (req, res) => {
-    connection.query("SELECT * FROM group_info", function(err, rows) {
-       if (err) throw err;
-       res.send(rows); 
-    });
-})
-
-app.get('/getGroupMember', function(req, res) {
-    connect.query("SELECT * FROM group_member", function(err, rows) {
-        if (err) throw err;
-        res.send(rows);
-    })
-})
-
 app.post('/createPoll', function(req, res) {
     var sql = `INSERT INTO poll (poll_name, poll_data) VALUES (?, ?)`;
     connection.query(sql, [req.body.pollName, JSON.stringify(req.body.questions)],  function(err, result) {
