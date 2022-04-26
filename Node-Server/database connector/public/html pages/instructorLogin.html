@@ -14,59 +14,24 @@
     <header class="mainheader">
         <div class="headerdiv">
             <div class ="dropdown" style="float: right;">
-                <button class="dropbutton">[[Name]]<br>Profile</button>
+                <button class="dropbutton" id="userButton">[[Name]]<br>Profile</button>
                 <div class="dropdown-content">
                     <a href="/link1">Link</a>
-                    <a href="/link2">Link</a>
+                    <a onclick="logout()">Logout</a>
                 </div>
             </div>
-            <div onclick="location.href='/home';" style="width: 100%; height:100%">
-                <img class="flowerImage" src="images/flower.jpg" alt="Flower">
+            <div onclick="location.href='/';" style="width: 100%; height:100%">
+                <img class="flowerImage" src="../images/flower.jpg" alt="Flower">
                 <h1>F.L.O.W.E.R.</h1>
                 <h2>Financial Literacy Operation With Educational Resources</h2>
             </div>
         </div>
         <hr>
-        <div class="dropdownBar">
-            <div class="dropdown" style="width: calc(50% - 4px);">
-                <button class="dropbutton">Learning Management System</button>
-                <div class="dropdown-content">
-                    <a href="#">Create Poll/Template</a>
-                    <a href="#">Create Student Group</a>
-                    <a href="#">Add Educational Material</a>
-                </div>
-            </div>
-            <div class="dropdown" style="width: calc(50% - 4px);">
-                <button class="dropbutton">Game Assignment Database</button>
-                <div class="dropdown-content">
-                </div>
-            </div>
-        </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="sidenavDropdown">
-                <button class="dropbutton">Learning Management System</button>
-                <div class="dropdown-content">
-                    <a href="#">Create Poll/Template</a>
-                    <a href="#">Create Student Group</a>
-                    <a href="#">Add Educational Material</a>
-                </div>
-            </div>
-            <div class="sidenavDropdown">
-                <button class="dropbutton">Game Assignment Database</button>
-                <div class="dropdown-content">
-                </div>
-            </div>
-        </div>
-		
-        <!-- Use any element to open the sidenav -->
-        <img class="sidenavButton" src="../images/iconmonstr-menu-1.svg" onclick="openNav()"></img>
-        <hr class="dropdownHr">
     </header>
 	
     <div class="content">
         <div class="container">
-            <form class="form" id="login" action="login" method="post">
+            <form class="form" id="login" action="/login" method="post">
                 <h1 class="form__title">Login</h1>
                 <div class="form__message form__message--error"></div>
                 <div class="form__input-group">
@@ -82,31 +47,23 @@
                     <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
                 </p>
             </form>
-            <form class="form form--hidden" id="createAccount" action="createAccount" method="POST">
+            <form class="form form--hidden" id="createAccount">
                 <h1 class="form__title">Create Account</h1>
                 <div class="form__message form__message--error"></div>
                 <div class="form__input-group">
-                    <input type="text" id="fistName" class="form__input" autofocus placeholder="First Name" name="first_name">
+                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
                     <div class="form__input-error-message"></div>
                 </div>
                 <div class="form__input-group">
-                    <input type="text" id="lastName" class="form__input" autofocus placeholder="Last Name" name="last_name">
-                    <div class="form__input-error-message"></div>
-                </div>            
-                <div class="form__input-group">
-                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username" name="username">
+                    <input type="text" class="form__input" autofocus placeholder="Email Address">
                     <div class="form__input-error-message"></div>
                 </div>
                 <div class="form__input-group">
-                    <input type="text" id="signupEmail" class="form__input" autofocus placeholder="Email Address" name="email">
+                    <input type="password" class="form__input" autofocus placeholder="Password">
                     <div class="form__input-error-message"></div>
                 </div>
                 <div class="form__input-group">
-                    <input type="password" id="signupPassword" class="form__input" autofocus placeholder="Password" name="password">
-                    <div class="form__input-error-message"></div>
-                </div>
-                <div class="form__input-group">
-                    <input type="password" id="signupConfirmPassword" class="form__input" autofocus placeholder="Confirm password" name="confirm_pass">
+                    <input type="password" class="form__input" autofocus placeholder="Confirm password">
                     <div class="form__input-error-message"></div>
                 </div>
                 <button class="form__button" type="submit">Continue</button>
@@ -117,5 +74,6 @@
         </div>
     </div>
     <script src="../javascripts/mainforLogin.js"></script>
+    <script src="../javascripts/cookie.js"></script>
 </body>
 </html>

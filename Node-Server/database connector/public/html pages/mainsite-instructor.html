@@ -6,22 +6,23 @@
 	<title>Main Site - Instructor</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../stylesheets/reset.css" type="text/css" />
-	<link rel="stylesheet" href="../stylesheets/site.css" type="text/css" />
+    <link rel="stylesheet" href="../stylesheets/index.css" type="text/css" />
+	<link rel="stylesheet" href="../stylesheets/main.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="../javascripts/sidebar.js"></script>
 </head>
 
 <body>
-    <header class="mainheader">
+
+	<header class="mainheader">
         <div class="headerdiv">
             <div class ="dropdown" style="float: right;">
-                <button class="dropbutton">[[Name]]<br>Profile</button>
+                <button class="dropbutton" id="userButton">[[Name]]<br>Profile</button>
                 <div class="dropdown-content">
                     <a href="/link1">Link</a>
-                    <a href="/link2">Link</a>
+                    <a onclick="logout()">Logout</a>
                 </div>
             </div>
-            <div onclick="location.href='/home';" style="width: 100%; height:100%">
+            <div onclick="location.href='/';" style="width: 100%; height:100%">
                 <img class="flowerImage" src="../images/flower.jpg" alt="Flower">
                 <h1>F.L.O.W.E.R.</h1>
                 <h2>Financial Literacy Operation With Educational Resources</h2>
@@ -32,9 +33,9 @@
             <div class="dropdown" style="width: calc(50% - 4px);">
                 <button class="dropbutton">Learning Management System</button>
                 <div class="dropdown-content">
-                    <a href="../html pages/create-template-instructor.html">Create Poll/Template</a>
-                    <a href="../html pages/create-groups-instructor.html">Create Student Groups</a>
-                    <a href="../html pages/add-material-instructor.html">Add Educational Material</a>
+                    <a href="/lms/poll">Create Poll</a>
+                    <a href="/lms/groups">Create Student Group</a>
+                    <a href="/lms/content">Add Educational Material</a>
                 </div>
             </div>
             <div class="dropdown" style="width: calc(50% - 4px);">
@@ -48,9 +49,9 @@
             <div class="sidenavDropdown">
                 <button class="dropbutton">Learning Management System</button>
                 <div class="dropdown-content">
-                    <a href="../html pages/create-template-instructor.html">Create Poll/Template</a>
-                    <a href="../html pages/create-groups-instructor.html">Create Student Groups</a>
-                    <a href="../html pages/add-material-instructor.html">Add Educational Material</a>
+                    <a href="/lms/poll">Create Poll</a>
+                    <a href="/lms/groups">Create Student Group</a>
+                    <a href="/lms/content">Add Educational Material</a>
                 </div>
             </div>
             <div class="sidenavDropdown">
@@ -66,23 +67,22 @@
     </header>
 
 	<section class="mainsection">
-		<!-- <div class="row">
+		<div class="row">
 			<div class="column">
-				<a href="lms-instructor.html">
-					<img src="../images/blue-iconmonstr-school-30-240.png" alt="LMS">
+				<a href="/lms">
+					<img alt="LMS" src="../images/blue-school.png">
 					<p>Learning Management System</p>
 				</a>
 			</div>
 			<div class="column">
-			</div>
-			<div class="column">
-				<a href="gad-instructor.html">
-					<img src="../images/blue-iconmonstr-folder-open-thin-240.png" alt="GAD">
+				<a href="#">
+					<img alt="GAD" src="../images/blue-folder.png">
 					<p>Game Assignment Database</p>
 				</a>
 			</div>
-		</div> -->
+		</div>
 	</section>
+    <script src="../javascripts/cookie.js"></script>
 </body>
 
 </html>
