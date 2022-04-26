@@ -41,10 +41,10 @@ function viewGroup(id) {
         .then(response => response.json())
         .then(function(response) {
             console.log(response);
-            var exitButton = document.createElement("button");
-            exitButton.textContent = "Exit";
-            exitButton.setAttribute("onClick", "javascript: setupPage();");
-            groupList.appendChild(exitButton);
+            var backButton = document.createElement("button");
+            backButton.textContent = "Back";
+            backButton.setAttribute("onClick", "javascript: setupPage();");
+            groupList.appendChild(backButton);
         })
         .catch(function(error) {
             console.log(error);
